@@ -20,6 +20,10 @@ mix.scripts([
     "node_modules/angular-route/angular-route.js"
 ], 'public/js/vendor.js');
 
+mix.scripts([
+    'node_modules/jquery/dist/jquery.js'
+], 'public/js/vendor-public.js');
+
 mix.copy(['resources/assets/coreui/fonts'], 'public/fonts');
 mix.copy(['resources/assets/coreui/css/font-awesome.css', 'resources/assets/coreui/css/simple-line-icons.css'], 'public/css/fonts.css');
 

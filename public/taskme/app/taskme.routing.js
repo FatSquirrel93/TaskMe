@@ -3,7 +3,7 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         .when('/test', {
             templateUrl: '/taskme/views/test.html'
         })
-        .otherwise({redirectTo: '/home'});
+        .otherwise({redirectTo: '/dashboard'});
 
     $locationProvider.html5Mode(true);
 }]);
