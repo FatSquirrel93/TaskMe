@@ -76,9 +76,9 @@
                                 <h1>Login</h1>
                                 <p class="text-muted">Sign In to your account</p>
 
-                                @if ($errors->has('email'))
+                                @if ($errors->has('name'))
                                     <span class="help-block">
-                                <strong>{{ $errors->first('email') }}</strong>
+                                <strong>{{ $errors->first('name') }}</strong>
                                 </span>
                                 @endif
 
@@ -91,8 +91,8 @@
                                 <div class="input-group mb-3">
                                 <span class="input-group-addon"><i class="icon-user"></i>
                                 </span>
-                                    <input type="text" class="form-control" placeholder="Username" name="email"
-                                           value="{{ old('email') }}" required autofocus>
+                                    <input type="text" class="form-control" placeholder="Username" name="name"
+                                           value="{{ old('name') }}" required autofocus>
                                 </div>
                                 <div class="input-group mb-4">
                                 <span class="input-group-addon"><i class="icon-lock"></i>
