@@ -14,63 +14,26 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/fonts.css') }}" rel="stylesheet">
 
+    <base href="/"/>
+
 </head>
-<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden">
+<body class="app header-fixed sidebar-fixed aside-menu-fixed aside-menu-hidden" ng-app="TaskMeApp">
 <header class="app-header navbar">
     <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">☰</button>
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler sidebar-minimizer d-md-down-none" type="button">☰</button>
-
 </header>
 
-<div class="app-body">
-    <div class="sidebar">
-        <nav class="sidebar-nav">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html"><i class="icon-speedometer"></i> Dashboard <span
-                                class="badge badge-primary">NEW</span></a>
-                </li>
-                <li class="nav-item nav-dropdown">
-                    <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> Components</a>
-                    <ul class="nav-dropdown-items">
-                        <li class="nav-item">
-                            <a class="nav-link" href="components-buttons.html"><i class="icon-puzzle"></i> Buttons</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="components-social-buttons.html"><i class="icon-puzzle"></i> Social
-                                Buttons</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="components-cards.html"><i class="icon-puzzle"></i> Cards</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="components-forms.html"><i class="icon-puzzle"></i> Forms</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="components-modals.html"><i class="icon-puzzle"></i> Modals</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="components-switches.html"><i class="icon-puzzle"></i> Switches</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="components-tables.html"><i class="icon-puzzle"></i> Tables</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="components-tabs.html"><i class="icon-puzzle"></i> Tabs</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
+<div class="app-body" ng-controller="LayoutController">
+@include('partials/sidebar')
 
-    <!-- Main content -->
+<!-- Main content -->
     <main class="main">
 
 
         <div class="container-fluid">
 
+            <ng-view></ng-view>
 
         </div>
         <!-- /.conainer-fluid -->
@@ -88,6 +51,11 @@
 
 <script src="{{ asset('js/vendor.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
+
+<script src="{{ asset('taskme/app/taskme.module.js') }}"></script>
+<script src="{{ asset('taskme/app/taskme.routing.js') }}"></script>
+
+<script src="{{ asset('taskme/app/layout/LayoutController.js') }}"></script>
 
 </body>
 </html>

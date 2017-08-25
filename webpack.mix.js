@@ -16,7 +16,8 @@ mix.js('resources/assets/coreui/js/app.js', 'public/js')
 
 mix.scripts([
     'node_modules/angular/angular.js',
-    'node_modules/jquery/dist/jquery.js'
+    'node_modules/jquery/dist/jquery.js',
+    "node_modules/angular-route/angular-route.js"
 ], 'public/js/vendor.js');
 
 mix.copy(['resources/assets/coreui/fonts'], 'public/fonts');
