@@ -9,7 +9,6 @@
         var vm = this;
 
         $scope.isActive = function (viewLocation) {
-            console.log(viewLocation, $location.path());
             return viewLocation === $location.path();
         };
 

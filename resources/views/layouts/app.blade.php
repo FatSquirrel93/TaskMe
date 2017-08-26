@@ -45,6 +45,10 @@
 
 <script src="{{ asset('taskme/app/layout/LayoutController.js') }}"></script>
 
+<!-- Translations -->
+<script src="{{ asset('taskme/translation/translation_de.js') }}"></script>
+<script src="{{ asset('taskme/translation/translation_en.js') }}"></script>
+
 <!-- User related -->
 <script src="{{ asset('taskme/app/user/service/UserDataService.js') }}"></script>
 <script src="{{ asset('taskme/app/user/controller/UserListController.js') }}"></script>
