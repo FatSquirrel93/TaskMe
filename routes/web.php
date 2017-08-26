@@ -31,3 +31,4 @@ Route::group(['prefix'=>'api', 'middleware' => 'auth'], function () {
 
 Route::get('/dashboard', 'HomeController@index')->name('home');
 Route::get('/test', 'HomeController@index')->name('home');
+Route::get('/user', 'HomeController@index')->name('home');

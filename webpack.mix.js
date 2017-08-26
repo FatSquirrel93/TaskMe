@@ -11,8 +11,7 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/coreui/js/app.js', 'public/js')
-   .sass('resources/assets/coreui/scss/style.scss', 'public/css');
+mix.sass('resources/assets/coreui/scss/style.scss', 'public/css');
 
 mix.scripts([
     'node_modules/angular/angular.js',

@@ -42,13 +42,6 @@
 
 </div>
 
-<footer class="app-footer">
-    <a href="http://coreui.io">CoreUI</a> © 2017 creativeLabs.
-    <span class="float-right">Powered by <a href="http://coreui.io">CoreUI</a>
-        </span>
-</footer>
-
-
 <script src="{{ asset('js/vendor.js') }}"></script>
 <script src="{{ asset('js/main.js') }}"></script>
 

@@ -14073,3 +14073,7 @@ hr.transparent {
   border-right-color: #29363d;
 }
 
+.main .container-fluid {
+  padding-top: 30px;
+}
+
