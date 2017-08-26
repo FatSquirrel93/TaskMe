@@ -2,17 +2,16 @@
     <div class="col-sm-12">
         <div class="card">
             <div class="card-header">
-                Card title
+                {{ 'USERS' | translate }}
             </div>
             <div class="card-block">
-                {{users}}
                 <table class="table">
                     <thead>
                     <tr>
-                        <th>Username</th>
-                        <th>Email</th>
-                        <th>Created</th>
-                        <th>Updated</th>
+                        <th>{{ 'USERNAME' | translate }}</th>
+                        <th>{{ 'EMAIL' | translate }}</th>
+                        <th>{{ 'CREATED' | translate }}</th>
+                        <th>{{ 'UPDATED' | translate }}</th>
                     </tr>
                     </thead>
                     <tbody>
