@@ -25,6 +25,11 @@ Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::group(['prefix'=>'api', 'middleware' => 'auth'], function () {
     Route::get('/users', '\App\Business\User\Web\UserApiController@findAll');
     Route::get('/users/{username}', '\App\Business\User\Web\UserApiController@findByUsername');
+
+    Route::get('/projects', '\App\Business\Project\Web\ProjectApiController@findAll');
+    Route::get('/projects/{id}', '\App\Business\Project\Web\ProjectApiController@findById');
+
+    Route::post('/projects', '\App\Business\Project\Web\ProjectApiController@save');
 });
 
 
@@ -32,3 +37,4 @@ Route::group(['prefix'=>'api', 'middleware' => 'auth'], function () {
 Route::get('/dashboard', 'HomeController@index')->name('home');
 Route::get('/test', 'HomeController@index')->name('home');
 Route::get('/user', 'HomeController@index')->name('home');
+Route::get('/project', 'HomeController@index')->name('home');

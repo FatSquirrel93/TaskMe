@@ -1,5 +1,9 @@
 app.config(function ($translateProvider) {
     $translateProvider.translations('en_EN', {
+        /* General */
+        CLOSE: 'Close',
+        SAVE: 'Save',
+
         /* Sidebar */
         DASHBOARD: 'Dashboard',
         ADMINISTRATION: 'Administration',
@@ -9,7 +13,15 @@ app.config(function ($translateProvider) {
         USERNAME: 'Username',
         EMAIL: 'Email',
         CREATED: 'Created',
-        UPDATED: 'Updated'
+        UPDATED: 'Updated',
+
+        /* Project */
+        PROJECT: 'Project',
+        PROJECTS: 'Projects',
+        NAME: 'Name',
+        DESCRIPTION: 'Description',
+        CREATOR: 'Creator',
+        PROJECT_NEW: 'Create new project'
     });
 
 });

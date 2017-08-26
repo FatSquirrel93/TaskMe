@@ -15,7 +15,6 @@ mix.sass('resources/assets/coreui/scss/style.scss', 'public/css');
 
 mix.scripts([
     'node_modules/angular/angular.js',
-    'node_modules/jquery/dist/jquery.js',
     'node_modules/angular-route/angular-route.js',
     'node_modules/angular-translate/dist/angular-translate.js'
 ], 'public/js/vendor.js');
