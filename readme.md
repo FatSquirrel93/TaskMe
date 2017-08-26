@@ -8,6 +8,7 @@ A basic diagram can be viewed using [draw.io](https://www.draw.io/). Simply load
 
 ## API
 
-| Entity        | Path          | Example response|
-| ------------- |---------------| --------|
-|User|`/api/users`|`[{"id":1,"name":"bob","email":"bob@test.com","created_at":"2017-08-25 14:26:57","updated_at":"2017-08-25 22:57:22"}, {"id":2,"name":"john","email":"john@test.com","created_at":"2017-08-25 17:17:02","updated_at":"2017-08-25 17:17:02"}]`|
+| Entity        | Path          |Description| Example response|
+| ------------- |---------------|-----------| --------|
+|User|`/api/users` |Return all persisted users|`[{"id":1,"name":"bob","email":"bob@test.com","created_at":"2017-08-25 14:26:57","updated_at":"2017-08-25 22:57:22"}, {"id":2,"name":"john","email":"john@test.com","created_at":"2017-08-25 17:17:02","updated_at":"2017-08-25 17:17:02"}]`|
+| |`/api/users/{username}`|Find a single persisted user with given username|`{"id":1,"name":"bob","email":"bob@test.com","created_at":"2017-08-25 14:26:57","updated_at":"2017-08-25 22:57:22"}`|
