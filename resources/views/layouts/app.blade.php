@@ -25,21 +25,15 @@
 </header>
 
 <div class="app-body" ng-controller="LayoutController">
-@include('partials/sidebar')
+    @include('partials/sidebar')
 
-<!-- Main content -->
     <main class="main">
-
-
         <div class="container-fluid">
 
             <ng-view></ng-view>
 
         </div>
-        <!-- /.conainer-fluid -->
     </main>
-
-
 </div>
 
 <script src="{{ asset('js/vendor.js') }}"></script>
@@ -47,8 +41,13 @@
 
 <script src="{{ asset('taskme/app/taskme.module.js') }}"></script>
 <script src="{{ asset('taskme/app/taskme.routing.js') }}"></script>
+<script src="{{ asset('taskme/app/taskme.config.js') }}"></script>
 
 <script src="{{ asset('taskme/app/layout/LayoutController.js') }}"></script>
+
+<!-- User related -->
+<script src="{{ asset('taskme/app/user/service/UserDataService.js') }}"></script>
+<script src="{{ asset('taskme/app/user/controller/UserListController.js') }}"></script>
 
 </body>
 </html>
