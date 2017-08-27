@@ -2,5 +2,6 @@
     "/css/style.css": "/css/style.css",
     "/js/vendor.js": "/js/vendor.js",
     "/js/vendor-public.js": "/js/vendor-public.js",
+    "/css/vendor.css": "/css/vendor.css",
     "/css/fonts.css": "/css/fonts.css"
 }

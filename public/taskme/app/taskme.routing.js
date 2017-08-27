@@ -3,7 +3,7 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         .when('/test', {
             templateUrl: '/taskme/views/test.html'
         })
-        .when('/user', {
+        .when('/admin/user', {
             templateUrl: '/taskme/views/user/user-view.html'
         })
         .when('/admin/project', {

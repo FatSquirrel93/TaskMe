@@ -14,6 +14,8 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="{{ asset('css/fonts.css') }}" rel="stylesheet">
 
+    <link href="{{ asset('css/vendor.css') }}" rel="stylesheet">
+
     <base href="/"/>
 
 </head>

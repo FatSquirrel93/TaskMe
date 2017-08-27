@@ -2,18 +2,18 @@
     <nav class="sidebar-nav">
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link" href="dashboard" ng-class="{ active: isActive('/dashboard')}"><i
+                <a class="nav-link" href="/dashboard" ng-class="{ active: isActive('/dashboard')}"><i
                             class="icon-speedometer"></i> @{{'DASHBOARD' | translate}} </a>
             </li>
             <li class="nav-item nav-dropdown">
                 <a class="nav-link nav-dropdown-toggle" href="#"><i class="icon-puzzle"></i> @{{ 'ADMINISTRATION' | translate }}</a>
                 <ul class="nav-dropdown-items">
                     <li class="nav-item">
-                        <a class="nav-link" href="user" ng-class="{ active: isActive('/admin/user')}"><i
+                        <a class="nav-link" href="/admin/user" ng-class="{ active: isActive('/admin/user')}"><i
                                     class="icon-people"></i> @{{'USERS' | translate}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="user" ng-class="{ active: isActive('/admin/project')}"><i
+                        <a class="nav-link" href="/admin/project" ng-class="{ active: isActive('/admin/project')}"><i
                                     class="icon-people"></i> @{{'PROJECTS' | translate}}</a>
                     </li>
                 </ul>

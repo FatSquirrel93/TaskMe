@@ -32,6 +32,7 @@
         activate();
 
         function activate() {
+            console.log('init ProjectItemController');
             vm.getProjectFromParameter();
         }
 

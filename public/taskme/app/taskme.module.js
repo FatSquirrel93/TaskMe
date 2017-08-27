@@ -1,4 +1,4 @@
 var app = angular.module(
     'TaskMeApp',
-    ['ngRoute',  'pascalprecht.translate'], function () {}
+    ['ngRoute',  'pascalprecht.translate', 'angular-loading-bar'], function () {}
 );
