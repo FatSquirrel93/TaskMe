@@ -71,5 +71,11 @@
 <script src="{{ asset('taskme/app/project/controller/ProjectListController.js') }}"></script>
 <script src="{{ asset('taskme/app/project/controller/ProjectItemController.js') }}"></script>
 
+<!-- Task related -->
+<script src="{{ asset('taskme/app/task/service/TaskDataService.js') }}"></script>
+<script src="{{ asset('taskme/app/task/controller/TaskListController.js') }}"></script>
+<script src="{{ asset('taskme/app/task/controller/TaskItemController.js') }}"></script>
+
+
 </body>
 </html>

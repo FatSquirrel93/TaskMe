@@ -1,0 +1,35 @@
+<div class="card">
+    <div class="card-header">
+        {{ 'TASKS' | translate }}
+    </div>
+    <div class="card-block">
+        <div class="row">
+            <div class="col-sm-12">
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>{{ 'NAME' | translate }}</th>
+                        <th>{{ 'DESCRIPTION' | translate }}</th>
+                        <th>{{ 'CREATOR' | translate }}</th>
+                        <th>{{ 'ASSIGNEE' | translate }}</th>
+                        <th>{{ 'DUE_DATE' | translate }}</th>
+                        <th>{{ 'STATUS' | translate }}</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="task in tasks">
+                        <td><a ng-href="/task/{{task.id}}">{{task.name}}</a></td>
+                        <td>{{task.description}}</td>
+                        <td>{{task.creator.name}}</td>
+                        <td>{{task.assignee.name}}</td>
+                        <td>{{task.dueDate}}</td>
+                        <td>
+                            <span class="tag tag-success">{{task.status.name}}</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

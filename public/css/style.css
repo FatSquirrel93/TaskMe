@@ -14077,3 +14077,7 @@ hr.transparent {
   padding-top: 30px;
 }
 
+.clickable:hover {
+  cursor: pointer;
+}
+

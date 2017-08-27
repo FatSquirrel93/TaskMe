@@ -14,64 +14,8 @@
     </div>
 
     <div class="col-sm-12">
-        <div class="card">
-            <div class="card-header">
-                {{ 'TASKS' | translate }}
-            </div>
-            <div class="card-block">
-                <div class="row">
-                    <div class="col-md-4">
-                        <h4>{{ 'STATUS_OPEN' | translate }}</h4>
-                        <table class="table table-striped">
-                            <tbody>
-                            <tr>
-                                <td>Yiorgos Avraamu</td>
-                                <td>2012/01/01</td>
-                                <td>Member</td>
-                                <td>
-                                    <span class="tag tag-success">Active</span>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="col-md-4">
-                        <h4>{{ 'STATUS_PROGRESS' | translate }}</h4>
-                        <table class="table table-striped">
-                            <tbody>
-                            <tr>
-                                <td>Yiorgos Avraamu</td>
-                                <td>2012/01/01</td>
-                                <td>Member</td>
-                                <td>
-                                    <span class="tag tag-success">Active</span>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                    <div class="col-md-4">
-                        <h4>{{ 'STATUS_DONE' | translate }}</h4>
-                        <table class="table table-striped">
-                            <tbody>
-                            <tr>
-                                <td>Yiorgos Avraamu</td>
-                                <td>2012/01/01</td>
-                                <td>Member</td>
-                                <td>
-                                    <span class="tag tag-success">Active</span>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
-                </div>
-            </div>
-        </div>
+        <div ng-include="templates.task.taskProjectTable" ng-controller="TaskListController"></div>
     </div>
 
-    <div ng-include="test"></div>
+    <div ng-include="templates.project.projectEditModal"></div>
 </div>
