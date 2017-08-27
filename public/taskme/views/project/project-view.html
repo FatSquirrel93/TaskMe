@@ -1,43 +1,13 @@
-<div class="row" ng-controller="ProjectListController">
+<div class="row" ng-controller="ProjectItemController">
     <div class="col-sm-12">
         <div class="card">
             <div class="card-header">
-                {{ 'PROJECTS' | translate }}
+                {{ project.name }}
             </div>
             <div class="card-block">
                 <button type="button" class="btn btn-outline-primary" data-target="#project-edit-modal"
-                        data-toggle="modal">{{ 'PROJECT_NEW' | translate }}
+                        data-toggle="modal">{{ 'PROJECT_EDIT' | translate }}
                 </button>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-sm-12">
-        <div class="card">
-            <div class="card-header">
-                {{ 'PROJECTS' | translate }}
-            </div>
-            <div class="card-block">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th>{{ 'NAME' | translate }}</th>
-                        <th>{{ 'DESCRIPTION' | translate }}</th>
-                        <th>{{ 'CREATOR' | translate }}</th>
-                        <th>{{ 'CREATED' | translate }}</th>
-                        <th>{{ 'UPDATED' | translate }}</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr ng-repeat="project in projects">
-                        <td>{{project.name}}</td>
-                        <td>{{project.description}}</td>
-                        <td>{{project.creator}}</td>
-                        <td>{{project.created_at}}</td>
-                        <td>{{project.updated_at}}</td>
-                    </tr>
-                    </tbody>
-                </table>
             </div>
         </div>
     </div>

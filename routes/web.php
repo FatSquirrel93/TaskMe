@@ -32,9 +32,15 @@ Route::group(['prefix'=>'api', 'middleware' => 'auth'], function () {
     Route::post('/projects', '\App\Business\Project\Web\ProjectApiController@save');
 });
 
+Route::group(['prefix'=>'admin', 'middleware' => 'auth'], function () {
+    Route::get('/user', 'HomeController@index')->name('home');
+    Route::get('/project', 'HomeController@index')->name('home');
+});
 
+Route::group(['prefix'=>'project', 'middleware' => 'auth'], function () {
+    Route::get('/{id}', 'HomeController@index')->name('home');
+});
 
 Route::get('/dashboard', 'HomeController@index')->name('home');
-Route::get('/test', 'HomeController@index')->name('home');
-Route::get('/user', 'HomeController@index')->name('home');
-Route::get('/project', 'HomeController@index')->name('home');
+//Route::get('/admin', 'HomeController@index')->name('home');
+//Route::get('/project', 'HomeController@index')->name('home');
