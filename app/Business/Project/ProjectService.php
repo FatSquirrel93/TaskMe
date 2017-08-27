@@ -21,7 +21,8 @@ class ProjectService
      *
      * @return \App\Business\Project\Persistence\Entity\Project|static[]
      */
-    public function findAll() {
+    public function findAll()
+    {
         return $this->projectRepository->findAll();
     }
 
@@ -31,7 +32,8 @@ class ProjectService
      * @param $id
      * @return \App\Business\Project\Persistence\Entity\Project
      */
-    public function findById($id) {
+    public function findById($id)
+    {
         return $this->projectRepository->findOne($id);
     }
 
@@ -41,7 +43,27 @@ class ProjectService
      * @param $project
      * @return \App\Business\Project\Persistence\Entity\Project
      */
-    public function save($project) {
+    public function save($project)
+    {
+        // check for update
+        if ($project->id) {
+            return $this->update($project);
+        }
         return $this->projectRepository->save($project);
+    }
+
+    /**
+     * Update a persisted project with given values.
+     *
+     * @param $project
+     * @return Persistence\Entity\Project
+     */
+    public function update($project)
+    {
+        $persisted = $this->projectRepository->findOne($project->id);
+        $persisted->name = $project->name;
+        $persisted->description = $project->description;
+
+        return $this->projectRepository->save($persisted);
     }
 }

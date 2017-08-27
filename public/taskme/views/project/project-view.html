@@ -1,13 +1,74 @@
 <div class="row" ng-controller="ProjectItemController">
+
+    <div class="col-sm-6 col-lg-3">
+        <div class="card">
+            <div class="card-block">
+                <div class="h4 m-a-0">{{ project.name }}</div>
+                <div class="p-b-1">{{ project.description }}</div>
+
+                <button type="button" class="btn btn-block btn-outline-primary" data-target="#project-edit-modal"
+                        data-toggle="modal">{{ 'PROJECT_EDIT' | translate }}
+                </button>
+            </div>
+        </div>
+    </div>
+
     <div class="col-sm-12">
         <div class="card">
             <div class="card-header">
-                {{ project.name }}
+                {{ 'TASKS' | translate }}
             </div>
             <div class="card-block">
-                <button type="button" class="btn btn-outline-primary" data-target="#project-edit-modal"
-                        data-toggle="modal">{{ 'PROJECT_EDIT' | translate }}
-                </button>
+                <div class="row">
+                    <div class="col-md-4">
+                        <h4>{{ 'STATUS_OPEN' | translate }}</h4>
+                        <table class="table table-striped">
+                            <tbody>
+                            <tr>
+                                <td>Yiorgos Avraamu</td>
+                                <td>2012/01/01</td>
+                                <td>Member</td>
+                                <td>
+                                    <span class="tag tag-success">Active</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h4>{{ 'STATUS_PROGRESS' | translate }}</h4>
+                        <table class="table table-striped">
+                            <tbody>
+                            <tr>
+                                <td>Yiorgos Avraamu</td>
+                                <td>2012/01/01</td>
+                                <td>Member</td>
+                                <td>
+                                    <span class="tag tag-success">Active</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h4>{{ 'STATUS_DONE' | translate }}</h4>
+                        <table class="table table-striped">
+                            <tbody>
+                            <tr>
+                                <td>Yiorgos Avraamu</td>
+                                <td>2012/01/01</td>
+                                <td>Member</td>
+                                <td>
+                                    <span class="tag tag-success">Active</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>

@@ -20,6 +20,7 @@ class Project extends Model
      * @var array
      */
     protected $fillable = [
+        'id',
         'name',
         'description',
         'creator',
