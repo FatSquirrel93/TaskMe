@@ -28,10 +28,14 @@ Route::group(['prefix'=>'api', 'middleware' => 'auth'], function () {
 
     Route::get('/projects', '\App\Business\Project\Web\ProjectApiController@findAll');
     Route::get('/projects/{id}', '\App\Business\Project\Web\ProjectApiController@findById');
-
     Route::post('/projects', '\App\Business\Project\Web\ProjectApiController@save');
     Route::put('/projects', '\App\Business\Project\Web\ProjectApiController@save');
 
+    Route::get('/tasks', '\App\Business\Task\Web\TaskApiController@findAll');
+    Route::get('/tasks/{id}', '\App\Business\Task\Web\TaskApiController@findById');
+    Route::get('/tasks/project/{id}', '\App\Business\Task\Web\TaskApiController@findByProjectId');
+    Route::post('/tasks', '\App\Business\Task\Web\TaskApiController@save');
+    Route::put('/tasks', '\App\Business\Task\Web\TaskApiController@save');
 });
 
 Route::group(['prefix'=>'admin', 'middleware' => 'auth'], function () {

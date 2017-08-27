@@ -20,6 +20,7 @@ class Task extends Model
      * @var array
      */
     protected $fillable = [
+        'id',
         'name',
         'description',
         'project',
@@ -32,19 +33,19 @@ class Task extends Model
     ];
 
     public function project() {
-        return $this->hasOne('App\Business\Project\Persistence\Entity\Project');
+        return $this->belongsTo('App\Business\Project\Persistence\Entity\Project', 'project');
     }
 
     public function creator() {
-        return $this->hasOne('App\Business\User\Persistence\Entity\User');
+        return $this->belongsTo('App\Business\User\Persistence\Entity\User', 'creator');
     }
 
     public function assignee() {
-        return $this->hasOne('App\Business\User\Persistence\Entity\User');
+        return $this->belongsTo('App\Business\User\Persistence\Entity\User', 'assignee');
     }
 
     public function status() {
-        return $this->hasOne('App\Business\Status\Persistence\Entity\Status');
+        return $this->belongsTo('App\Business\Status\Persistence\Entity\Status', 'status');
     }
 
 }
