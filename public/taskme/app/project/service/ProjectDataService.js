@@ -25,7 +25,9 @@
         }
 
         function save(project) {
-            console.log('service save', project);
+            if(project.id) {
+                return $http.put($api + entity, project).then($result);
+            }
             return $http.post($api + entity, project).then($result);
         }
 

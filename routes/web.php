@@ -30,6 +30,8 @@ Route::group(['prefix'=>'api', 'middleware' => 'auth'], function () {
     Route::get('/projects/{id}', '\App\Business\Project\Web\ProjectApiController@findById');
 
     Route::post('/projects', '\App\Business\Project\Web\ProjectApiController@save');
+    Route::put('/projects', '\App\Business\Project\Web\ProjectApiController@save');
+
 });
 
 Route::group(['prefix'=>'admin', 'middleware' => 'auth'], function () {
