@@ -21,7 +21,8 @@ app.config(function ($translateProvider) {
         NAME: 'Name',
         DESCRIPTION: 'Description',
         CREATOR: 'Creator',
-        PROJECT_NEW: 'Create new project'
+        PROJECT_NEW: 'Create new project',
+        PROJECT_EDIT: 'Edit project'
     });
 
 });

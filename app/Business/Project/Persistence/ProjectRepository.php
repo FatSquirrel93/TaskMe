@@ -19,7 +19,7 @@ class ProjectRepository
      * @return \App\Business\Project\Persistence\Entity\Project|static[]
      */
     public function findAll(){
-        return Project::all();
+        return Project::with('creator')->get();
     }
 
     /**

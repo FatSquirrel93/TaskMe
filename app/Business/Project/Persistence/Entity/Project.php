@@ -28,7 +28,7 @@ class Project extends Model
     ];
 
     public function creator() {
-        return $this->hasOne('App\Business\User\Persistence\Entity\User');
+        return $this->belongsTo('App\Business\User\Persistence\Entity\User', 'creator');
     }
 
     public function tasks() {
