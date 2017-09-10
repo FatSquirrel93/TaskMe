@@ -15,7 +15,8 @@
                     projectEditModal: '/taskme/views/project/project-edit-modal.html'
                 },
                 task: {
-                    taskProjectTable: '/taskme/views/task/task-project-table.html'
+                    taskProjectTable: '/taskme/views/task/task-project-table.html',
+                    taskEditModal: '/taskme/views/task/task-edit-modal.html'
                 }
 
             };

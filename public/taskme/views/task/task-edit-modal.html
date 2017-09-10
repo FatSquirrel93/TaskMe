@@ -1,0 +1,35 @@
+<div tabindex="-1" class="modal fade" id="task-edit-modal" aria-hidden="true">
+    <div class="modal-dialog modal-primary modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">{{ 'TASK_EDIT' | translate }}</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <!--<div ng-if="errors.length > 0" class="alert alert-danger" role="alert">-->
+                <!--<p class="mb-1" ng-repeat="error in errors">{{error.code | translate}}</p>-->
+                <!--</div>-->
+
+                <div class="form-group">
+                    <label for="name" class="control-label"> {{'NAME' | translate}}</label>
+                    <input class="form-control" id="name" type="text" ng-model="task.name">
+                </div>
+                <div class="form-group">
+                    <label for="description" class="control-label"> {{'DESCRIPTION' | translate}}</label>
+                    <input class="form-control" id="description" type="text" ng-model="task.description">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button data-dismiss="modal" class="btn btn-link" type="button">
+                    {{'CLOSE' |
+                    translate}}
+                </button>
+                <button type="button" class="btn btn-primary" ng-click="save()">{{'SAVE' |
+                    translate}}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
