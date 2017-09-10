@@ -25,6 +25,10 @@ app.config(function ($translateProvider) {
         PROJECT_NEW: 'Neues Project anlegen',
         PROJECT_EDIT: 'Projekt bearbeiten',
 
+        /* Task */
+        TASK_CREATED_SUCCESS: 'Aufgabe erfolgreich angelegt',
+        TASK_CREATED_ERROR: 'Aufgabe konnte nicht erstellt werden'
+
     });
     $translateProvider.preferredLanguage('de_DE');
 });

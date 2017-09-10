@@ -23,7 +23,11 @@ app.config(function ($translateProvider) {
         DESCRIPTION: 'Description',
         CREATOR: 'Creator',
         PROJECT_NEW: 'Create new project',
-        PROJECT_EDIT: 'Edit project'
+        PROJECT_EDIT: 'Edit project',
+
+        /* Task */
+        TASK_CREATED_SUCCESS: 'Task created successfully',
+        TASK_CREATED_ERROR: 'Task could not be created'
     });
 
 });
