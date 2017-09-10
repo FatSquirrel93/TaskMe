@@ -3,6 +3,7 @@ app.config(function ($translateProvider) {
         /* General */
         CLOSE: 'Close',
         SAVE: 'Save',
+        LOGOUT: 'Logout',
 
         /* Sidebar */
         DASHBOARD: 'Dashboard',

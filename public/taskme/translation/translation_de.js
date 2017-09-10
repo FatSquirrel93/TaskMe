@@ -3,6 +3,7 @@ app.config(function ($translateProvider) {
         /* General */
         CLOSE: 'Abbrechen',
         SAVE: 'Speichern',
+        LOGOUT: 'Abmelden',
 
         /* Sidebar */
         DASHBOARD: 'Übersicht',
@@ -22,7 +23,7 @@ app.config(function ($translateProvider) {
         DESCRIPTION: 'Beschreibung',
         CREATOR: 'Ersteller',
         PROJECT_NEW: 'Neues Project anlegen',
-        PROJECT_EDIT: 'Projekt bearbeiten'
+        PROJECT_EDIT: 'Projekt bearbeiten',
 
     });
     $translateProvider.preferredLanguage('de_DE');

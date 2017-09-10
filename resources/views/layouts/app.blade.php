@@ -24,6 +24,23 @@
     <button class="navbar-toggler mobile-sidebar-toggler d-lg-none mr-auto" type="button">☰</button>
     <a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler sidebar-minimizer d-md-down-none" type="button">☰</button>
+    <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item d-md-down-none">
+            <a class="nav-link" href="#"><i class="icon-bell"></i><span class="badge badge-pill badge-danger">0</span></a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="d-md-down-none">{{ Auth::user()->name }}</span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="/logout"><i class="fa fa-lock"></i> @{{ 'LOGOUT' | translate }}</a>
+                <div class="dropdown-header text-center">
+                    {{ App::VERSION() }}
+                    {{ config('app.version') }}
+                </div>
+            </div>
+        </li>
+    </ul>
 </header>
 
 <div class="app-body" ng-controller="LayoutController">
