@@ -33,7 +33,7 @@
                 <span class="d-md-down-none">{{ Auth::user()->name }}</span>
             </a>
             <div class="dropdown-menu dropdown-menu-right">
-                <a class="dropdown-item" href="/logout"><i class="fa fa-lock"></i> @{{ 'LOGOUT' | translate }}</a>
+                <a class="dropdown-item" href="/logout" target="_self"><i class="fa fa-lock"></i> @{{ 'LOGOUT' | translate }}</a>
                 <div class="dropdown-header text-center">
                     {{ App::VERSION() }}
                     {{ config('app.version') }}
