@@ -9,7 +9,7 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
         .when('/admin/project', {
             templateUrl: '/taskme/views/project/admin-project-view.html'
         })
-        .when('/project/:id', {
+        .when('/project/:projectId', {
             templateUrl: '/taskme/views/project/project-view.html'
         })
         .otherwise({redirectTo: '/dashboard'});

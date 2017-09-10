@@ -1,26 +1,35 @@
 <div class="row" ng-controller="ProjectItemController">
 
-    <div class="col-sm-6 col-lg-3">
+    <div ng-include="templates.project.projectEditModal"></div>
+
+    <div class="col-sm-12">
         <div class="card">
             <div class="card-block">
-                <div class="h4 m-a-0">{{ project.name }}</div>
-                <div class="p-b-1">{{ project.description }}</div>
-
-                <button type="button" class="btn btn-block btn-outline-primary" data-target="#project-edit-modal"
-                        data-toggle="modal">{{ 'PROJECT_EDIT' | translate }}
-                </button>
-                <button type="button" class="btn btn-block btn-outline-primary" data-target="#task-edit-modal"
-                        data-toggle="modal">{{ 'TASK_CREATE' | translate }}
-                </button>
+                <div class="row">
+                    <div class="col-md-2 col-xs-12">
+                        <div class="h4 m-a-0">{{ project.name }}</div>
+                        <div class="p-b-1">{{ project.description }}</div>
+                    </div>
+                    <div class="col-md-8 col-xs-12">
+                        <button type="button" class="btn btn-outline-primary" data-target="#project-edit-modal"
+                                data-toggle="modal">{{ 'PROJECT_EDIT' | translate }}
+                        </button>
+                        <button type="button" class="btn btn-outline-primary" data-target="#task-edit-modal"
+                                data-toggle="modal">{{ 'TASK_CREATE' | translate }}
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="col-sm-12">
+    <div class="col-sm-6" ng-controller="TaskListController">
         <div ng-include="templates.task.taskProjectTable"></div>
     </div>
 
-    <div ng-include="templates.project.projectEditModal"></div>
+    <div class="col-sm-6">
+    </div>
+
     <div ng-include="templates.task.taskEditModal" ng-controller="TaskItemController"></div>
 
 </div>

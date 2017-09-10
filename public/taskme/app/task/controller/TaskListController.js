@@ -10,10 +10,8 @@
         $scope.tasks = [];
 
         vm.findAll = function () {
-            if ($routeParams['id']) {
-                console.log('task id', $routeParams['id']);
-                TaskDataService.findByProjectId($routeParams['id']).then(function (response) {
-                    console.log('loaded task', response);
+            if ($routeParams['projectId']) {
+                TaskDataService.findByProjectId($routeParams['projectId']).then(function (response) {
                     $scope.tasks = response;
                 })
             }

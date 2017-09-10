@@ -20,10 +20,8 @@
         };
 
         vm.getProjectFromParameter = function () {
-            if ($routeParams['id']) {
-                console.log('project id', $routeParams['id']);
-                ProjectDataService.findById($routeParams['id']).then(function (response) {
-                    console.log('loaded project', response);
+            if ($routeParams['projectId']) {
+                ProjectDataService.findById($routeParams['projectId']).then(function (response) {
                     $scope.project = response;
                 })
             }
