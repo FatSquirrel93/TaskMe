@@ -17,14 +17,15 @@ mix.scripts([
     'node_modules/angular/angular.js',
     'node_modules/angular-route/angular-route.js',
     'node_modules/angular-translate/dist/angular-translate.js',
-    'node_modules/angular-loading-bar/build/loading-bar.js'
+    'node_modules/angular-loading-bar/build/loading-bar.js',
+    'node_modules/ng-notify/dist/ng-notify.min.js',
 ], 'public/js/vendor.js');
 
 mix.scripts([
     'node_modules/jquery/dist/jquery.js'
 ], 'public/js/vendor-public.js');
 
-mix.copy(['node_modules/angular-loading-bar/build/loading-bar.css'], 'public/css/vendor.css');
+mix.copy(['node_modules/angular-loading-bar/build/loading-bar.css', 'node_modules/ng-notify/dist/ng-notify.min.css'], 'public/css/vendor.css');
 mix.copy(['resources/assets/coreui/fonts'], 'public/fonts');
 mix.copy(['resources/assets/coreui/css/font-awesome.css', 'resources/assets/coreui/css/simple-line-icons.css'], 'public/css/fonts.css');
 

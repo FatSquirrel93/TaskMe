@@ -48,7 +48,6 @@
 
     <main class="main">
         <div class="container-fluid" ng-controller="ContentController">
-
             <ng-view></ng-view>
 
         </div>
