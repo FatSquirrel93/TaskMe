@@ -27,7 +27,9 @@ app.config(function ($translateProvider) {
 
         /* Task */
         TASK_CREATED_SUCCESS: 'Aufgabe erfolgreich angelegt',
-        TASK_CREATED_ERROR: 'Aufgabe konnte nicht erstellt werden'
+        TASK_CREATED_ERROR: 'Aufgabe konnte nicht erstellt werden',
+        TASK_CREATE: 'Aufgabe erstellen',
+        TASK_EDIT: 'Aufgabe bearbeiten'
 
     });
     $translateProvider.preferredLanguage('de_DE');

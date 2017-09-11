@@ -27,7 +27,9 @@ app.config(function ($translateProvider) {
 
         /* Task */
         TASK_CREATED_SUCCESS: 'Task created successfully',
-        TASK_CREATED_ERROR: 'Task could not be created'
+        TASK_CREATED_ERROR: 'Task could not be created',
+        TASK_CREATE: 'Create task',
+        TASK_EDIT: 'Edit task'
     });
 
 });
