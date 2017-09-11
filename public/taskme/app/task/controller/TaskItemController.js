@@ -11,7 +11,7 @@
 
         $scope.save = function() {
             return TaskDataService.save($scope.task).then(function (response) {
-                $translate('TASK_CREATED_SUCCESS').then(function (text) {
+                $translate('TASK_CREATE_SUCCESS').then(function (text) {
                     ngNotify.set(text, 'success');
                     $rootScope.$broadcast('task:created');
                 });
@@ -19,7 +19,7 @@
         };
 
         vm.errorCallback = function (response) {
-            $translate('TASK_CREATED_ERROR').then(function (text) {
+            $translate('TASK_CREATE_ERROR').then(function (text) {
                 ngNotify.set(text, 'error');
             });
         };

@@ -24,10 +24,12 @@ app.config(function ($translateProvider) {
         CREATOR: 'Ersteller',
         PROJECT_NEW: 'Neues Project anlegen',
         PROJECT_EDIT: 'Projekt bearbeiten',
+        PROJECT_UPDATE_SUCCESS: 'Änderungen des Projektes gespeichert',
+        PROJECT_UPDATE_ERROR: 'Änderungen des Projektes konnten nicht gespeichert werden',
 
         /* Task */
-        TASK_CREATED_SUCCESS: 'Aufgabe erfolgreich angelegt',
-        TASK_CREATED_ERROR: 'Aufgabe konnte nicht erstellt werden',
+        TASK_CREATE_SUCCESS: 'Aufgabe erfolgreich angelegt',
+        TASK_CREATE_ERROR: 'Aufgabe konnte nicht erstellt werden',
         TASK_CREATE: 'Aufgabe erstellen',
         TASK_EDIT: 'Aufgabe bearbeiten'
 
